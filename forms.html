@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <form action="">
+        <h1>Contact Information</h1>
+        <h6>Required field are marked by *</h6>
+        <p>First Name : <input type="text" name ="fname" required><sup>*</sup></p>
+        <p>Last Name : <input type="text" name="lname"></p>
+        <fieldset>
+            <legend>Select Your Gender<sup>*</sup></legend>
+            <p>Gender : <br> Male <input type="radio" name="gender" id="male" required> <br> Female <input type="radio" name="gender" id="female" required></p>
+        </fieldset>
+        <p>Address : <br> <textarea name="address" id="address" cols="50" rows="10" required></textarea><sup>*</sup></p>
+        <p>Email : <input type="email" name="email" id="email"></p>
+        <p>Mobile No. <input type="number" name="m_no" id="m_no" required><sup>*</sup></p>
+        <p>Pincode : <input type="number" name="Pincode" id="Pincode"required><sup>*</sup></p>
+        <h1>Payment Information</h1>
+        <p>Card Type : <select name="card_type" id="card_type" required>
+            <option value="">--Select a card type--</option>
+            <option value="visa">VISA</option>
+            <option value="rupay">RUPAY</option>
+            <option value="mastercard">MASTER CARD</option>
+            <sup>*</sup>
+        </select></p>
+        <p>Card Number : <input type="number" name="card_number" id="c_number" required><sup>*</sup></p>
+        <p>Expiry Date : <input type="date" name="exp_date" id="exp_date" required><sup>*</sup></p>
+        <p>CVV : <input type="password" name="cvv" id="cvv" required><sup>*</sup></p>
+        <p>Name On Card : <input type="text" required><sup>*</sup></p>
+        <p><input type="submit" value="Pay Now"></p>
+    </form>
+</body>
+</html>
